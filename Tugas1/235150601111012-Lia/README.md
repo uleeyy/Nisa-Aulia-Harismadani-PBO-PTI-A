@@ -13,5 +13,4 @@ Fitur yang ditiru : fitur cek saldo dan fitur transfer
 
 ## 🔗 Link Penjelasan Tugas
 
-https://www.youtube.com/watch?v=dQw4w9WgXcQ
-
+https://youtu.be/c0jk_5JZ1CQ
