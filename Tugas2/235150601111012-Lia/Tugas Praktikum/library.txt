@@ -1,0 +1,55 @@
+Kategori: Teknologi
+Daftar Buku:
+- Pemrograman Java: Konsep Dasar oleh Agus Setiawan
+- Pemrograman Python: Panduan Lengkap oleh Budi Santoso
+- Pengembangan Aplikasi Android: Teknik Terbaru oleh Citra Dewi
+- Big Data dan Analisis: Pendekatan Praktis oleh Dharma Wirawan
+- Jaringan Komputer: Dasar-Dasar Komunikasi Data oleh Eka Putri
+
+Kategori: Filsafat
+Daftar Buku:
+- Filsafat Hidup: Menuju Kebahagiaan Abadi oleh Fauzi Rahman
+- Filsafat Ilmu: Perspektif Modern oleh Gita Wijaya
+- Filsafat Politik: Teori dan Aplikasi oleh Hadi Susilo
+- Filsafat Seni: Ekspresi Kreatif Manusia oleh Indah Kusuma
+- Etika Bisnis: Panduan Profesionalisme oleh Joko Suryanto
+
+Kategori: Sejarah
+Daftar Buku:
+- Sejarah Dunia: Perjalanan Peradaban Manusia oleh Kartika Dewi
+- Sejarah Indonesia: Dari Masa Pra-Kolonial Hingga Kemerdekaan oleh Lukman Hakim
+- Sejarah Asia Tenggara: Dinamika Budaya dan Politik oleh Mega Wulandari
+- Sejarah Perang Dunia II: Konflik Global yang Mengubah Dunia oleh Nadia Fitri
+- Sejarah Islam: Perkembangan dan Pengaruhnya oleh Oscar Simamora
+
+Kategori: Agama
+Daftar Buku:
+- Agama-agama Dunia: Kepercayaan dan Praktik oleh Putri Mulia
+- Al-Quran: Panduan Hidup dalam Kehidupan Modern oleh Rahmat Hidayat
+- Kitab Suci Hindu: Keseimbangan Spiritual dan Materi oleh Sari Indah
+- Injil Perjanjian Baru: Ajaran Kasih dan Pengampunan oleh Taufik Hidayat
+- Buddha Dharma: Jalan Menuju Kebijaksanaan Abadi oleh Ulfa Zahra
+
+Kategori: Psikologi
+Daftar Buku:
+- Psikologi Klinis: Diagnosis dan Penanganan Gangguan Mental oleh Vina Putri
+- Psikologi Sosial: Interaksi Manusia dalam Masyarakat oleh Wahyu Surya
+- Psikologi Anak: Pembentukan Karakter dan Perkembangan Emosional oleh Xavier Aditya
+- Psikologi Industri: Produktivitas dan Kesejahteraan Kerja oleh Yuli Widiastuti
+- Psikologi Kepribadian: Teori dan Aplikasi dalam Kehidupan Sehari-hari oleh Zainal Abidin
+
+Kategori: Politik
+Daftar Buku:
+- Politik Global: Tren dan Tantangan Abad ke-21 oleh Zara Ananda
+- Politik Demokrasi: Partisipasi Publik dalam Pembangunan Negara oleh Ardian Saputra
+- Politik Ekonomi: Dinamika Kekuasaan dan Kesejahteraan Rakyat oleh Bella Permatasari
+- Politik Lingkungan: Perlindungan Alam dalam Kebijakan Publik oleh Cahya Pradana
+- Politik Identitas: Pergeseran Pemikiran dalam Kebudayaan Modern oleh Dedi Gunawan
+
+Kategori: Fiksi
+Daftar Buku:
+- Fiksi Ilmiah: Petualangan di Luar Angkasa oleh Edi Santoso
+- Fiksi Fantasi: Dunia Ajaib dan Makhluk Gaib oleh Fika Cahaya
+- Fiksi Misteri: Teka-teki Kriminal yang Tak Terpecahkan oleh Gerry Pratama
+- Fiksi Romansa: Kisah Cinta yang Mengharukan oleh Helen Anggraeni
+- Fiksi Petualangan: Pengembaraan ke Negeri yang Belum Terjamah oleh Iwan Setiawan
