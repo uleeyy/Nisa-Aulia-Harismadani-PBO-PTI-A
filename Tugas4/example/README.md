@@ -1,15 +1,16 @@
 # 📁 Tugas 4 : Constructor, Instance Method & Method Overloading
 
 ## 👤 Identitas Intern
-Nama : Devan             
-NIM  : 22xxxxxx
+Nama : Nisa' Aulia Harismadani             
+NIM  : 235150601111012
 
 ## 📤 Submission
 
-Tema yang dipilih : 
+Tema yang dipilih : Makhluk Hidup
 Class Diagram yang dibuat : 
-1. Class Diagram 1
-2. Class Diagram 2
+1. Class Diagram Hewan
+2. Class Diagram Petani
+3. Class Diagram Tumbuhan
 dst
 
 ## Implementasi CRUD
@@ -27,5 +28,5 @@ Gunakan template ini apabila kamu mengerjakan optional requirements
 
 ## 🔗 Link Penjelasan Tugas
 
-https://www.youtube.com/watch?v=dQw4w9WgXcQ
+https://youtu.be/lTaUVuw48l4
 
