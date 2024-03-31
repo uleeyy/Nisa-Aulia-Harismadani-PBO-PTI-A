@@ -1,5 +1,4 @@
 package studkas2;
-
 public class Dosen {
     public String nama;
     public String NIDN;
@@ -21,5 +20,7 @@ public class Dosen {
         System.out.println(this.nama + " mengajar mahasiswa dengan nama " + mhs.nama);
     }
 
-    void mengajar()
+    void mengajar() {
+        
+    }
 }

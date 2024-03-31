@@ -15,17 +15,6 @@ dst
 
 ## Implementasi CRUD
 
-Gunakan template ini apabila kamu mengerjakan optional requirements
-
-| Aspek | Penjelasan    |     
-| :---:   | :---: | 
-| Create | -   | 
-| Read | -   | 
-| Update | -   | 
-| Delete | -   | 
-
-
-
 ## 🔗 Link Penjelasan Tugas
 
 https://youtu.be/lTaUVuw48l4

@@ -1,4 +1,4 @@
-public class Student { 
+public class Student {
     private String name; 
     private int mark;
     public void setName(String n){ 
@@ -13,4 +13,4 @@ public class Student {
     public int getMark(){ 
         return mark;
     }
-}   
+}
