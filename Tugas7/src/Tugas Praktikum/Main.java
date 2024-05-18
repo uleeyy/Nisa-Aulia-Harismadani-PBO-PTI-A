@@ -1,75 +1,71 @@
+import java.util.Random;
 public class Main {
     public static void main(String[] args) {
-        Kue[] kues = new Kue[20];
-        kues[0] = new KuePesanan("Lemper", 1000, 6);
-        kues[1] = new KuePesanan("Bolu", 2000, 5);
-        kues[2] = new KuePesanan("Pastel", 1000, 7);
-        kues[3] = new KuePesanan("Kue Lapis", 1500, 2);
-        kues[4] = new KuePesanan("Bolu kukus", 1500, 4);
-        kues[5] = new KuePesanan("Red Velvet", 5000, 3);
-        kues[6] = new KuePesanan("Bika Ambon", 2500, 5);
-        kues[7] = new KuePesanan("Kue Cucur", 1500, 2);
-        kues[8] = new KuePesanan("Kue Apem", 1000, 9);
-        kues[9] = new KuePesanan("Naga Sari", 1000, 8);
-        kues[10] = new KueJadi("Lemper", 1000, 23);
-        kues[11] = new KueJadi("Bolu", 2000, 45);
-        kues[12] = new KueJadi("Pastel", 1000, 21);
-        kues[13] = new KueJadi("Kue Lapis", 1500, 10);
-        kues[14] = new KueJadi("Bolu kukus", 1500, 5);
-        kues[15] = new KueJadi("Red Velvet", 5000, 8);
-        kues[16] = new KueJadi("Bika Ambon", 2500, 25);
-        kues[17] = new KueJadi("Kue Cucur", 1500, 17);
-        kues[18] = new KueJadi("Kue Apem", 1000, 11);
-        kues[19] = new KueJadi("Naga Sari", 1000, 3);
-        System.out.println(); System.out.println("Kue Pesanan : "); System.out.println();
-        for (int i = 0; i < 20; i++) {
-            if (i == 10) {
-        System.out.println(""); System.out.println("Kue Jadi : ");
-        System.out.println(""); System.out.println();
+        Kue[] kueArray = new Kue[20];
 
-                   } System.out.println(kues[i].toString());
-        System.out.println(); }
+        Random rand = new Random();
+        for (int i = 0; i < kueArray.length; i++) {
+            if (rand.nextBoolean()) {
+                // KuePesanan
+                double berat = rand.nextDouble() * 10 + 1;
+                kueArray[i] = new KuePesanan("Kue Pesanan " + i, rand.nextDouble() * 100 + 1, berat);
+            } else {
+                // KueJadi
+                double jumlah = rand.nextInt(10) + 1;
+                kueArray[i] = new KueJadi("Kue Jadi " + i, rand.nextDouble() * 100 + 1, jumlah);
+            }
+        }
+
+        System.out.println("Semua kue:");
+        for (Kue kue : kueArray) {
+            System.out.println(kue.toString());
+        }
+
         double totalHarga = 0;
-       for (int i = 0; i < 20; i++) {
-           totalHarga += kues[i].hitungHarga();
-       }
-       double hargaP = 0;
-       double beratP = 0;
-       String jumlahJ = null;
-       for (int i = 0; i < 10; i++) {
-           hargaP += kues[i].hitungHarga();
-           if (kues[i] instanceof KuePesanan) {
-            KuePesanan pesanan = (KuePesanan) kues [i];
-            KueJadi jadi = null;
-            jumlahJ += jadi.getJumlah();
+        for (Kue kue : kueArray) {
+            totalHarga += kue.hitungHarga();
         }
-               }
-               double harga[] = new double[20];
-               for (int i = 0; i < 20; i++) {
-                   harga[i] = kues[i].hitungHarga();
-               }
-        String termahal = "";
-        double tertinggi = getTertinggi(harga); for (int
-        j = 0; j < 20; j++) {
-                   if (kues[j].hitungHarga() == tertinggi) {
-                       termahal = kues[j].getNama();
-                   }
+        System.out.println("\nTotal harga dari semua jenis kue: " + totalHarga);
+        
+        double totalHargaPesanan = 0;
+        double totalBerat = 0;
+        int pesananCount = 0;
+        for (Kue kue : kueArray) {
+            if (kue instanceof KuePesanan) {
+                totalHargaPesanan += kue.hitungHarga();
+                totalBerat += ((KuePesanan) kue).getBerat();
+                pesananCount++;
+            }
         }
-        System.out.println("==================================== ========");
-        System.out.println("Total Harga Kue\t\t\t: Rp. " + totalHarga);
-        System.out.println("Total Harga Kue Pesanan\t: Rp. " + hargaP);
-        System.out.println("Total Berat Kue Pesanan\t: "+ beratP);
-        String hargaJ = null;
-        System.out.println("Total Harga Kue Jadi\t: Rp. " + hargaJ);
-        System.out.println("Total Jumlah Kue Jadi\t: " + jumlahJ);
-        System.out.println("Kue Termahal\t\t\t: " + termahal); 
-        System.out.println("============================================");
-   }
-   public static double getTertinggi(double[]inputArray)
-                                            
-double nilaiTertinggi = inputArray[0];
-for (int i = 1; i < inputArray.length; i++) {
-    if (inputArray[i] > nilaiTertinggi) {
-        nilaiTertinggi = inputArray[i];
-}}
-return nilaiTertinggi;
+        System.out.println("\nTotal harga dan total berat dari KuePesanan:");
+        System.out.println("Total harga: " + totalHargaPesanan);
+        System.out.println("Total berat: " + totalBerat);
+        System.out.println("Jumlah KuePesanan: " + pesananCount);
+
+        // Calculate total harga and total jumlah from KueJadi
+        double totalHargaJadi = 0;
+        double totalJumlah = 0;
+        int jadiCount = 0;
+        for (Kue kue : kueArray) {
+            if (kue instanceof KueJadi) {
+                totalHargaJadi += kue.hitungHarga();
+                totalJumlah += ((KueJadi) kue).getJumlah();
+                jadiCount++;
+            }
+        }
+        System.out.println("\nTotal harga dan total jumlah dari KueJadi:");
+        System.out.println("Total harga: " + totalHargaJadi);
+        System.out.println("Total jumlah: " + totalJumlah);
+        System.out.println("Jumlah KueJadi: " + jadiCount);
+
+        // Find kue with the highest harga
+        Kue maxHargaKue = kueArray[0];
+        for (int i = 1; i < kueArray.length; i++) {
+            if (kueArray[i].hitungHarga() > maxHargaKue.hitungHarga()) {
+                maxHargaKue = kueArray[i];
+            }
+        }
+        System.out.println("\nKue dengan harga terbesar:");
+        System.out.println(maxHargaKue.toString());
+    }
+}

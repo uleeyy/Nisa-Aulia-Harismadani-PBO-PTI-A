@@ -4,13 +4,22 @@ public class KueJadi extends Kue {
         super(nama, harga);
         this.jumlah = jumlah;
     }
-    public int getJumlah() {
-        return (int) this.jumlah;
-    }
+
+    @Override
     public double hitungHarga() {
-        return this.jumlah * super.getHarga() * 2;
+        return getHarga() * jumlah * 2; 
     }
+
+    public double getJumlah() {
+        return jumlah;
+    }
+
+    public void setJumlah(double jumlah) {
+        this.jumlah = jumlah;
+    }
+
+    @Override
     public String toString() {
-        return super.toString() + "\nJumlah Kue\t\t: " + this.jumlah + "\nTotal Harga\t\t: " + hitungHarga() + "\nJenis Kue\t\t: Kue Jadi";
-    } 
+        return "Kue Jadi - " + super.toString() + ", Jumlah: " + jumlah;
+    }
 }
